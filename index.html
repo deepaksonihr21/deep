@@ -68,12 +68,24 @@
         }
         .project-card:hover { border-color: var(--secondary); transform: translateY(-5px); }
         
-        .project-img { width: 100%; height: 200px; background: #111; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; text-align: center; padding: 20px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
-        
         .project-content { padding: 30px; }
         .project-content h3 { margin-bottom: 10px; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; }
-        .project-link { color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: bold; border-bottom: 1px solid var(--accent); transition: 0.3s; }
-        .project-link:hover { color: var(--accent); }
+
+        /* --- HUB SECTION DESIGN --- */
+        .hub-card {
+            background: linear-gradient(145deg, #110022, #030005);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        .hub-card:hover { border-color: var(--accent); box-shadow: 0 0 30px rgba(188, 19, 254, 0.2); }
+        .hub-tag { font-size: 0.7rem; font-weight: 900; letter-spacing: 3px; color: var(--secondary); margin-bottom: 10px; display: block; }
+        .hub-title { font-size: 1.8rem; font-weight: 800; margin-bottom: 15px; }
+        .hub-btn { color: #fff; text-decoration: none; font-weight: 800; font-size: 0.9rem; border-bottom: 2px solid var(--accent); padding-bottom: 5px; }
 
         /* --- PRICING --- */
         .price-tag { font-size: 2.5rem; font-weight: 900; margin: 15px 0; color: #fff; }
@@ -112,42 +124,6 @@
         <h1>BUILDING <span>DIGITAL</span> BRANDS.</h1>
         <p>I help creators organize their content and skyrocket their growth with custom-coded Personal Websites.</p>
         <a href="#pricing" class="cta-main">View Investment Plans</a>
-    </section>
-
-    <h2 class="section-title">Success Stories</h2>
-    <div class="grid">
-        <div class="project-card">
-            <div class="project-img" style="background: linear-gradient(45deg, #00d2ff, #3a7bd5);">TRAVEL & ADVENTURE BRAND</div>
-            <div class="project-content">
-                <h3>Akhil Sharma</h3>
-                <p>Premium storytelling hub for a verified community of 116k+ travelers.</p><br>
-                <a href="https://akhilsharmaa.netlify.app" class="project-link" target="_blank">View Live Project →</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img" style="background: linear-gradient(45deg, #ff0000, #550000);">FITNESS PERFORMANCE HUB</div>
-            <div class="project-content">
-                <h3>Dr. Destruction</h3>
-                <p>Raw, high-energy landing page built for 2M+ fitness enthusiasts.</p><br>
-                <a href="http://godofdestruction.netlify.app" class="project-link" target="_blank">View Live Project →</a>
-            </div>
-        </div>
-    </div>
-
-    <section class="about-grid">
-        <div class="about-text">
-            <h2>Why Hire <span>Deepak Soni?</span></h2>
-            <p>I don't just build websites; I build <strong>Experiences</strong>. While most people use generic bio tools, I code custom platforms that load 2x faster.</p>
-            <br>
-            <p><strong>Speed. Precision. Identity.</strong> That’s what I bring to your brand.</p>
-        </div>
-        <div class="about-stats" style="background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
-            <h3 style="color: var(--secondary); margin-bottom: 10px;">99.9% Performance</h3>
-            <p style="color: #666; margin-bottom: 20px;">Optimized for high traffic and mobile viewing.</p>
-            <h3 style="color: var(--secondary); margin-bottom: 10px;">100% Unique</h3>
-            <p style="color: #666;">No templates. Every site is built from scratch.</p>
-        </div>
     </section>
 
     <h2 id="pricing" class="section-title">Investment Plans</h2>
@@ -193,6 +169,45 @@
                 </ul>
                 <a href="https://www.instagram.com/deepaksonihr21" target="_blank" class="cta-main" style="display: block; text-align: center; font-size: 0.8rem; padding: 12px; border-radius: 10px; background: #fff; color: #000;">GET PREMIUM</a>
             </div>
+        </div>
+    </div>
+
+    <section class="about-grid">
+        <div class="about-text">
+            <h2>Why Hire <span>Deepak Soni?</span></h2>
+            <p>I don't just build websites; I build <strong>Experiences</strong>. While most people use generic bio tools, I code custom platforms that load 2x faster.</p>
+            <br>
+            <p><strong>Speed. Precision. Identity.</strong> That’s what I bring to your brand.</p>
+        </div>
+        <div class="about-stats" style="background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+            <h3 style="color: var(--secondary); margin-bottom: 10px;">99.9% Performance</h3>
+            <p style="color: #666; margin-bottom: 20px;">Optimized for high traffic and mobile viewing.</p>
+            <h3 style="color: var(--secondary); margin-bottom: 10px;">100% Unique</h3>
+            <p style="color: #666;">No templates. Every site is built from scratch.</p>
+        </div>
+    </section>
+
+    <h2 class="section-title">Live Sample Hubs</h2>
+    <div class="grid" style="margin-bottom: 100px;">
+        <div class="hub-card">
+            <span class="hub-tag">STARTER PACK</span>
+            <h3 class="hub-title">Basic Hub</h3>
+            <p style="color: #666; margin-bottom: 25px;">Simple, clean, and high-speed link management systems.</p>
+            <a href="https://deepaksonihr21.github.io/Basisdemohub/" class="hub-btn">EXPLORE BASIC DESIGNS →</a>
+        </div>
+
+        <div class="hub-card" style="border-color: var(--accent);">
+            <span class="hub-tag">CREATOR'S CHOICE</span>
+            <h3 class="hub-title">Advanced Hub</h3>
+            <p style="color: #666; margin-bottom: 25px;">Dynamic layouts with video and storytelling integration.</p>
+            <a href="#" class="hub-btn">EXPLORE ADVANCED DESIGNS →</a>
+        </div>
+
+        <div class="hub-card">
+            <span class="hub-tag">ELITE STATUS</span>
+            <h3 class="hub-title">Premium Hub</h3>
+            <p style="color: #666; margin-bottom: 25px;">High-end animations and custom business architecture.</p>
+            <a href="#" class="hub-btn">EXPLORE PREMIUM DESIGNS →</a>
         </div>
     </div>
 </div>
